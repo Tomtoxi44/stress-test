@@ -1,0 +1,20 @@
+{
+  "name": "stress-test",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/gganster/stress-test#readme",
+  "bugs": {
+    "url": "https://github.com/gganster/stress-test/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gganster/stress-test.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
