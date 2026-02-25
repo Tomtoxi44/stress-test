@@ -1,0 +1,21 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 10
+      arrivalRate: 5
+      name: "Warm up"
+    - duration: 15
+      arrivalRate: 20
+      name: "Charge moyenne"
+    - duration: 15
+      arrivalRate: 50
+      name: "Charge forte"
+    - duration: 20
+      arrivalRate: 100
+      name: "Pic de charge"
+
+scenarios:
+  - name: "Stress CPU"
+    flow:
+      - get:
+          url: "/?duration=10"
